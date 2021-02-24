@@ -29,13 +29,11 @@ class UserController extends Controller
                     'oper' => 'ok',
                 ]);
              }
-            else{
-                return response()->json([
-                   'oper' => 'incorrect',
-               ]);
-               }
          }
-         
+         return response()->json([
+            'oper' => 'incorrect',
+        ]);
+
         
     }
   /**
