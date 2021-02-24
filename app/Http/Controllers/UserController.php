@@ -29,16 +29,13 @@ class UserController extends Controller
                     'oper' => 'ok',
                 ]);
              }
-            //  else{
-            //     return response()->json([
-            //         'oper' => 'ko',
-            //     ]);
-            //       }
-         }/*else{
-             return response()->json([
-                 'failed' => ' Username non valid ',
-             ],404);
-         }*/
+            else{
+                return response()->json([
+                   'oper' => 'incorrect',
+               ]);
+               }
+         }
+        
     }
   /**
      * Store a newly created resource in storage.
